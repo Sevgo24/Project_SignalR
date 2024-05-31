@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalReactive", "SignalReactive\SignalReactive.csproj", "{A98F2277-F1C2-4543-AF81-B036A95B4DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "web", "web\web.csproj", "{4D6F72CA-EFF4-4448-ADFA-2F8775DDD952}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A98F2277-F1C2-4543-AF81-B036A95B4DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98F2277-F1C2-4543-AF81-B036A95B4DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98F2277-F1C2-4543-AF81-B036A95B4DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98F2277-F1C2-4543-AF81-B036A95B4DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D6F72CA-EFF4-4448-ADFA-2F8775DDD952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D6F72CA-EFF4-4448-ADFA-2F8775DDD952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D6F72CA-EFF4-4448-ADFA-2F8775DDD952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D6F72CA-EFF4-4448-ADFA-2F8775DDD952}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAFCD97D-C36F-4DA5-9C57-74846ED25EF0}
+	EndGlobalSection
+EndGlobal
