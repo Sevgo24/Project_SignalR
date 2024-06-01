@@ -9,6 +9,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy("AllowOrigin", b =>
+    {
+        b.AllowAnyHeader()
+        .AllowAnyMethod()
+        .SetIsOriginAllowed((Host) => true)
+        .AllowCredentials();
+    });
+});
+
 builder.Services.AddSignalR();
 
 var app = builder.Build();
@@ -28,9 +39,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.UseCors("AllowOrigin");
 app.UseEndpoints(endpoints =>
 {
     _ = endpoints.MapHub<MessageHub>("/message");
 });
+
 
 app.Run();

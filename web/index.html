@@ -18,15 +18,19 @@
 
     <script type="text/javascript">
         const connection = new signalR.HubConnectionBuilder()
-            .withUrl("https://localhost:44328/api/Beer?message=holaa")
+            .withUrl("https://localhost:44328/message")
             .build();
 
         connection.start()
             .then(() => {
                 console.log("Se conecto");
-            }).catch((error) => console.error(error.message));
+            }).catch(
+                function (err) {
+                    return console.log(err.message);
+                
+            });
 
-        connection.on("SendMessage", (message) => {
+        connection.on("sendMessage", (message) => {
             console.log(message);
         });
 

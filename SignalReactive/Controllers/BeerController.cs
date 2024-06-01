@@ -19,7 +19,7 @@ namespace SignalReactive.Controllers
         [HttpGet]
         public async Task<IActionResult> Send(string message)
         {
-            await _hubContext.Clients.All.SendAsync(message);
+            await _hubContext.Clients.All.SendAsync("sendMessage", message);
             return Ok();
         }
     }

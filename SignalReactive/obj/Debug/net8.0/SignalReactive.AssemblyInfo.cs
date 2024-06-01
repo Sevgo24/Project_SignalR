@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SignalReactive")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f17a02a396c5fd0f5c4b11eb74f50458006624c2")]
 [assembly: System.Reflection.AssemblyProductAttribute("SignalReactive")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SignalReactive")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
